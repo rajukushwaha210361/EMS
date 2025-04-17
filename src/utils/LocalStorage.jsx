@@ -15,8 +15,8 @@ const employees = [
         "tasks": [
             { "title": "Task 1", "description": "Complete the report", "date": "2025-04-01", "category": "Work", "active": true, "newTask": true, "complete": false, "failed": false },
             { "title": "Task 2", "description": "Team meeting", "date": "2025-04-02", "category": "Meeting", "active": false, "newTask": false, "complete": true, "failed": false },
-            { "title": "Task 2", "description": "Team meeting", "date": "2025-04-02", "category": "Meeting", "active": false, "newTask": false, "complete": true, "failed": false },
-            { "title": "Task 2", "description": "Team meeting", "date": "2025-04-02", "category": "Meeting", "active": false, "newTask": false, "complete": true, "failed": false }
+            { "title": "Task 3", "description": "Team meeting", "date": "2025-04-02", "category": "Meeting", "active": false, "newTask": false, "complete": true, "failed": false },
+            { "title": "Task 4", "description": "Team meeting", "date": "2025-04-02", "category": "Meeting", "active": false, "newTask": false, "complete": true, "failed": false }
         ]
     },
     {
@@ -51,7 +51,7 @@ const employees = [
         "tasks": [
             { "title": "Task 1", "description": "Code review", "date": "2025-04-05", "category": "Development", "active": true, "newTask": true, "complete": false, "failed": false },
             { "title": "Task 2", "description": "Fix bugs", "date": "2025-04-06", "category": "Debugging", "active": false, "newTask": false, "complete": false, "failed": true },
-            { "title": "Task 2", "description": "Fix bugs", "date": "2025-04-06", "category": "Debugging", "active": false, "newTask": true, "complete": false, "failed": false }
+            { "title": "Task 3", "description": "Fix bugs", "date": "2025-04-06", "category": "Debugging", "active": false, "newTask": true, "complete": false, "failed": false }
         ]
     },
     {

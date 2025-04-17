@@ -74,7 +74,7 @@ const CreateTask = () => {
                                     }} />
                             </div>
                             <div>
-                                <label className="form-lable fs-4">Descrption</label>
+                                <label className="form-lable fs-4">Description</label>
                                 <textarea cols="30" rows="3" className="form-control border-5" placeholder='Description'  value={taskDescription} onChange={(e) => {
                                         settaskDescription(e.target.value)
                                     }}></textarea>
