@@ -8,7 +8,7 @@ const TaskList = ({data}) => {
     // console.log(data)
     return (
         <>
-            <div className="d-flex w-50 flex-column align-items-center border m-2 p-1 gap-2  w-100 rounded-4  overflow-auto">
+            <div className="d-flex flex-column align-items-center border m-2 p-1 gap-2  w-100 rounded-4 ">
                 {/* <AcceptTask />
                 <NewTask />
                 <CompleteTask />

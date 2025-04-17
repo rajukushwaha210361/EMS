@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a:hover{
+transform: scale(1.05);
+}
+button:hover{
+    transform: scale(1.05);
+
+}
