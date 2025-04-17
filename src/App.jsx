@@ -10,12 +10,12 @@ import { AuthContext } from './Context/AuthProvider'
 const App = () => {
   const [user, setUser] = useState(null);
   const [loggedUserData, setLoggedUserData] = useState(null);
-  
+
   // useEffect(() => {
   //   setLocalstroage(); 
   // },)
 
-  const [userData,setUserData] = useContext(AuthContext);
+  const [userData, setUserData] = useContext(AuthContext);
   // console.log(authData);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const App = () => {
       setUser(userData.role);
       setLoggedUserData(userData.data);
     }
-  },[])
+  }, [])
 
   const handleLogin = (email, password) => {
     if (email == 'admin@gmail.com' && password == '123') {
@@ -40,10 +40,9 @@ const App = () => {
         setLoggedUserData(employee);
         localStorage.setItem('loggedInUser', JSON.stringify({ role: 'employee', data: employee }))
       }
-      // console.log("emp")
-    }
-    else {
-      alert("Invlid credentials");
+      else {
+        alert("please enter the correct Email and Password");
+      }
     }
   }
 
@@ -52,7 +51,7 @@ const App = () => {
   return (
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ''}
-      {user == 'admin' ? <AdminDashboard changeUser={setUser} data={loggedUserData} role={user}/> : (user == 'employee' ? <EmployeeDashboard changeUser={setUser} data={loggedUserData} role={user} /> : '')}
+      {user == 'admin' ? <AdminDashboard changeUser={setUser} data={loggedUserData} role={user} /> : (user == 'employee' ? <EmployeeDashboard changeUser={setUser} data={loggedUserData} role={user} /> : '')}
     </>
   )
 }
